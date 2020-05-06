@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Defeat the Dragon!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <script src="assets/scripts/vendor.js" defer></script>
+    <script src="assets/scripts/sounds.js" defer></script>
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <section id="health-levels">
+      <h2>DRAGON HEALTH</h2>
+      <progress id="monster-health" max="100" value="100">100%</progress>
+      <h2>PLAYER HEALTH<span id="bonus-life">1</span></h2>
+      <progress id="player-health" max="100" value="100">100%</progress>
+    </section>
+    <section id="actions">
+      <h2>ACTIONS</h2>
+      <button id="attack-btn">ATTACK</button>
+      <button id="strong-attack-btn">STRONG ATTACK</button>
+      <button id="heal-btn">HEAL</button>
+    </section>
+    <section id="scoreboard">
+      <h2>PLAYER:</h2>
+      <h2><span id="player-score">0</span></h2>
+      <h2>DRAGON:</h2>
+      <h2><span id="dragon-score">0</span></h2>
+    </section>
+    <section id="admin">
+      <button id="log-btn">SHOW LOG IN CONSOLE</button>
+      <h2>Note: You will need to open the developer tools of your browser in order to view the log!</h2>
+    </section>
+
+      <audio id="heal-sound" src="/assets/sounds/heal.wav"></audio>
+      <audio id="log-sound" src="/assets/sounds/log.wav"></audio>
+      <audio id="victory-sound" src="/assets/sounds/victory.wav"></audio>
+      <audio id="attack-sound" src="/assets/sounds/attack.wav"></audio>
+      <audio id="strong-attack-sound" src="/assets/sounds/strongattack.wav"></audio>
+
+  </body>
+</html>
