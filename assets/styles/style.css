@@ -72,6 +72,16 @@ button {
   border: 1px solid #a137e7;
 }
 
+#mute-btn {
+  background: #e06919;
+  border: 1px solid #e06919;
+}
+
+#unmute-btn {
+  background: #e019c5;
+  border: 1px solid #e019c5;
+}
+
 button:focus {
   outline: none;
 }
